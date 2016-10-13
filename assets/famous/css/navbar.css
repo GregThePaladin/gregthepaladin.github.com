@@ -1,0 +1,27 @@
+body {
+	padding-top: 70px;
+}
+
+.navbar-brand {
+	min-height: 70px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.navbar {
+	min-height: 70px;
+}
+
+.navbar-item {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.navbar-toggle {
+	margin-top: 18px;
+}
+
+.navbar-nav > li > a {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
