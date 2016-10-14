@@ -1,0 +1,31 @@
+
+.footer-container {
+	border-top-style: solid;
+	border-top-color: white;
+    border-top-width: 1px;
+}
+.footer {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.footer-left {
+	float: left;
+}
+.footer-right {
+	float: right;
+}
+.footer-right > a {
+	color: white;
+}
+.footer-right > a:link {
+	color: white;
+}
+.footer-right > a:visited {
+	color: white;
+}
+.footer-right > a:hover {
+	color: white;
+}
+.footer-right > a:active {
+	color: white;
+}

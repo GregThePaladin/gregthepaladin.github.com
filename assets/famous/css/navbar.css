@@ -1,5 +1,16 @@
+
+html {
+	background-color: #222;
+}
+
 body {
 	padding-top: 70px;
+	background-color: #222;
+	color: white;
+}
+
+.container {
+	background-color: #222;
 }
 
 .navbar-brand {
@@ -24,16 +35,4 @@ body {
 .navbar-nav > li > a {
 	padding-top: 25px;
 	padding-bottom: 25px;
-}
-
-html {
-	background-color: #222;
-}
-
-body {
-	background-color: #222;
-}
-
-.container {
-	background-color: #222;
 }
