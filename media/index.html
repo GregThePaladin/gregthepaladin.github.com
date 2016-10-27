@@ -15,6 +15,7 @@
     <link href="../assets/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="../assets/famous/css/navbar.css" rel="stylesheet">
     <link href="../assets/famous/css/footer.css" rel="stylesheet">
+	<link href="../assets/blueimp/css/blueimp-gallery.min.css" rel="stylesheet" >
 	<style type="text/css">
 		
 		.img-item {
@@ -102,6 +103,60 @@
 		<div class="row">
 			<div class="col-md-12 photo-row">
 				<h1>Photos</h1>
+				
+				
+				
+				<div id="links">
+					<a href="../assets/famous/img/media/16.jpg">
+					<img src="../assets/famous/img/media/thumbnails/16.jpg">
+					</a>
+					<a href="../assets/famous/img/media/15.jpg">
+					<img src="../assets/famous/img/media/thumbnails/15.jpg">
+					</a>
+					<a href="../assets/famous/img/media/14.jpg">
+						<img src="../assets/famous/img/media/thumbnails/14.jpg">
+					</a>
+					<a href="../assets/famous/img/media/13.jpg">
+						<img src="../assets/famous/img/media/thumbnails/13.jpg">
+					</a>
+					<a href="../assets/famous/img/media/12.jpg">
+						<img src="../assets/famous/img/media/thumbnails/12.jpg">
+					</a>
+					<a href="../assets/famous/img/media/11.jpg">
+						<img src="../assets/famous/img/media/thumbnails/11.jpg">
+					</a>
+					<a href="../assets/famous/img/media/10.jpg">
+						<img src="../assets/famous/img/media/thumbnails/10.jpg">
+					</a>
+					<a href="../assets/famous/img/media/9.jpg">
+						<img src="../assets/famous/img/media/thumbnails/9.jpg">
+					</a>
+					<a href="../assets/famous/img/media/8.jpg">
+						<img src="../assets/famous/img/media/thumbnails/8.jpg">
+					</a>
+					<a href="../assets/famous/img/media/7.jpg">
+						<img src="../assets/famous/img/media/thumbnails/7.jpg">
+					</a>
+					<a href="../assets/famous/img/media/6.jpg">
+						<img src="../assets/famous/img/media/thumbnails/6.jpg">
+					</a>
+					<a href="../assets/famous/img/media/5.jpg">
+						<img src="../assets/famous/img/media/thumbnails/5.jpg">
+					</a>
+					<a href="../assets/famous/img/media/4.jpg">
+						<img src="../assets/famous/img/media/thumbnails/4.jpg">
+					</a>
+					<a href="../assets/famous/img/media/3.jpg">
+						<img src="../assets/famous/img/media/thumbnails/3.jpg">
+					</a>
+					<a href="../assets/famous/img/media/2.jpg">
+						<img src="../assets/famous/img/media/thumbnails/2.jpg">
+					</a>
+					<a href="../assets/famous/img/media/1.jpg">
+						<img src="../assets/famous/img/media/thumbnails/1.jpg">
+					</a>
+				</div>
+				
 			</div>
 		</div>
 		
@@ -374,6 +429,35 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../assets/famous/js/jquery-3.1.1.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	
+	
+	
+		
+	<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+	<div id="blueimp-gallery" class="blueimp-gallery">
+		<div class="slides"></div>
+		<h3 class="title"></h3>
+		<a class="prev"><</a>
+		<a class="next">></a>
+		<a class="close">X</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+	</div>
+	
+	<script src="../assets/blueimp/js/blueimp-gallery.min.js"></script>
+	
+	<script>
+		document.getElementById('links').onclick = function (event) {
+			event = event || window.event;
+			var target = event.target || event.srcElement,
+				link = target.src ? target.parentNode : target,
+				options = {index: link, event: event},
+				links = this.getElementsByTagName('a');
+			blueimp.Gallery(links, options);
+		};
+	</script>
+	
+	
 
   </body>
 </html>
