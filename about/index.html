@@ -16,7 +16,7 @@
     <link href="../assets/famous/css/navbar.css" rel="stylesheet">
     <link href="../assets/famous/css/footer.css" rel="stylesheet">
 	<style type="text/css">
-		
+	
 		.title {
 		
 			text-align: center;
@@ -29,25 +29,36 @@
 			
 		}
 		
-		.contact-cell {
-			padding-left: 20px;
+		.about-row {
+		
+			text-align: center;
+			
+			padding-top: 30px;
 			padding-bottom: 30px;
+			
+			font-size: 24px;
+			
 		}
 		
-		td { 
-			padding-top: 1px;
-			padding-left: 4px;
+		
+		.splash-img {
+			max-width: 100%;
 		}
 		
-		.media-pic {
-			padding: 0px;
-			min-height: 480px;
-			
-			background-color: #222;
-			
-			background-position: center;
-			background-repeat: no-repeat;
-			background-image: url(../assets/famous/img/LogoSplash2.png);
+		.container-bg {
+			border-top: 1px solid black;
+		}
+		
+		.container-bg-odd {
+			border-top: 1px solid black;
+			background-color: #292929;
+		}
+		
+		.container-even {
+		}
+		
+		.container-odd {
+			background-color: #292929;
 		}
 		
 	</style>
@@ -75,58 +86,85 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="navbar-item"><a href="../media/index.html">Media</a></li>
-            <li class="navbar-item"><a href="../about/index.html">About</a></li>
-            <li class="navbar-item active"><a href="#">Contact</a></li>
+            <li class="navbar-item active"><a href="#">About</a></li>
+            <li class="navbar-item"><a href="../contact/index.html">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 	
-    <div class="container">
-    </div>
 	
-    <div class="container media-pic">
+    <div class="container">
+
+		<!-- Example row of columns -->
 		<div class="row ">
-			<h1 class="title">Contact</h1>
+			<h1 class="title">About</h1>
 		</div>
-		<div class="row">
-			<div class="col-md-1 contact-cell"></div>
-			<div class="col-md-3 contact-cell">
-				<h2>Harold Janke</h2>
-				<table>
-					<tr><td>Email:</td><td><a href="mailto:hjanke@jankeauto.com">hjanke@jankeauto.com</a></td></tr>
-					<tr><td>Phone:</td><td>(402) 385-3592</td></tr>
-					<tr><td>Cell:</td><td>(712) 898-3760</td></tr>
-				</table>
-			</div>
-
-			<div class="col-md-1 contact-cell"></div>
-			<div class="col-md-3 contact-cell">
-			<h2>Dean Palmer</h2>
-				<table>
-					<tr><td>Email:</td><td><a href="mailto:tsjanke@gmail.com">gpalmer@iw.net</a></td></tr>
-					<tr><td>Cell:</td><td>(712) 898-4497</td></tr>
-				</table>
-			</div>
-
-			<div class="col-md-1 contact-cell"></div>
-			<div class="col-md-3 contact-cell">
-				<h2>Trevor Janke</h2>
-					<table>
-					<tr><td>Email:</td><td><a href="mailto:tsjanke@gmail.com">tsjanke@gmail.com</a></td></tr>
-				</table>
-			</div>
-
-		</div>
-
     </div> <!-- /container -->
+
+	<div class="">
+		<div class="container">
+			<div class="row about-row">
+				<div class="col-md-6" >
+					<img class="splash-img" src="../assets/famous/img/about/leonard.jpg" >
+				</div>
+				<div class="col-md-6">
+					Leonard Janke started it all. He began racing in Britain during his
+					time in the Air Force. This was the beginning of a career that would
+					last over 30 years. Can-Am was his predominant series, with some 40
+					races between 1968 and 1981. His achievments were honor by the Nebraska
+					Racing Hall of Fame in 2003.
+				</div>
+			</div>
+		</div>
+	
+	
+	<div class="container-bg-odd">
+		<div class="container container-odd" >
+			<div class="row about-row">
+				<div class="col-md-6">
+					
+				</div>
+				<div class="col-md-6" >
+					<img class="splash-img" src="../assets/famous/img/about/harold.jpg" >
+				</div>
+			</div>
+		</div>
+	</div>
+			
+	<div class="container-bg">
+		<div class="container container-even" >
+			<div class="row about-row">
+				<div class="col-md-6" >
+					<img class="splash-img" src="../assets/famous/img/about/dean.jpg" >
+				</div>
+				<div class="col-md-6">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+			
+	<div class="container-bg-odd">
+		<div class="container container-odd" >
+			<div class="row about-row">
+				<div class="col-md-6">
+					
+				</div>
+				<div class="col-md-6" >
+					<img class="splash-img" src="../assets/famous/img/about/trevor.jpg" >
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	
 	<div class="footer-container" >
 		<div class="container" >
 		  
 		  <div class="footer">
 			<p class="footer-left">Famous Racing Enterprises</p>
-			<p class="footer-right"><a href="../index.html">Home</a> - <a href="../media/index.html">Media</a> - <a href="../about/index.html">About</a> - <a href="#">Contact</a></p>
+			<p class="footer-right"><a href="../index.html">Home</a> - <a href="../media/index.html">Media</a> - <a href="#">About</a> - <a href="../contact/index.html">Contact</a></p>
 		  </div>
 
 		</div> <!-- /container -->
